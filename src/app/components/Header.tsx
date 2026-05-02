@@ -71,9 +71,10 @@ export function Header() {
           <div className="flex items-center gap-2">
             <ThemeToggle />
             {user && (
-              <div className="hidden sm:flex items-center gap-2 ml-2">
+              <div className="hidden sm:flex items-center gap-3 ml-2">
                 <div className="text-right">
                   <p className="text-sm font-medium">{user.name}</p>
+                  <p className="text-xs text-muted-foreground">{user.email}</p>
                 </div>
                 <button
                   onClick={logout}
